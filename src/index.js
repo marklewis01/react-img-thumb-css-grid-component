@@ -45,12 +45,7 @@ function App() {
   return (
     <Fragment>
       <Grid columns={3}>
-        <div className="grid-cell">
-          <div className="square-image" />
-          <div className="text-wrapper">
-            <div className="text">John Doe</div>
-          </div>
-        </div>
+        <Thumb title="Enter your overlay text here" textBackground="rgba(0,0,0,.4)"/>
         <Thumb />
         <Thumb title="a sample title" />
       </Grid>
