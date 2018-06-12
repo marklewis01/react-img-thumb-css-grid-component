@@ -1,0 +1,55 @@
+body {
+  background-color: #eee;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-cell {
+  position: relative;
+  cursor: pointer;
+  background-color: black;
+}
+
+.square-image {
+  background-image: url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  padding-bottom: 100%;
+  transition: 0.3s ease;
+}
+
+.text-wrapper {
+  transition: 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px;
+  text-align: center;
+  width: 80%;
+}
+
+.grid-cell:hover .square-image {
+  opacity: 0.5;
+}
+
+.grid-cell:hover .text-wrapper {
+  opacity: 1;
+}
