@@ -81,12 +81,3 @@ function App() {
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
-
-/**
- * Props:
- *  img alt text
- *  youtube link
- *  thumb-image
- *  project title
- *  small/large
- */
